@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(12, 173, 182, 0.655);
+            width: 100vw;
+            height: 100vh;
+            
+
+        }
+        .card{
+            background-color: white;
+            width: 400px;
+            height: 600px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            border: 1px 1px aqua;
+            box-shadow: 1px 1px 10px black;
+        }
+        .card img{
+            width: 400px;
+            height: 200px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+           width: 75%;
+        }
+        #amountbox{
+            width: 80%;
+            height: 10%;
+            background-color: rgba(127, 238, 255, 0.647);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 50px;
+
+        }
+        .leftbox{
+            width: fit-content;
+            display: flex;
+            gap: 15px;
+        }
+        /* .imgbox{
+            width: 10px;
+            height: 10px; */
+        }
+        #img1{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            padding-right: 20px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #pay{
+            width: 80%;
+            height: 10%;
+            background-color: rgb(5, 5, 247);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 2px 3px 3px aqua;
+        }
+        .canclebox a{
+            text-decoration: none;
+            color: rgb(61, 56, 56);
+            font-weight: bold;
+            font-size: large;
+        }
+        /* .imgbox img{
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 2px;
+            justify-content: space-evenly;
+            display: flex;
+            align-items: center;
+        } */
+     
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="compuer.jpg" alt="">
+            <div class="textbox">
+                <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsum dolores deleniti cupiditate facilis delectus, consequuntur odit suscipit expedita facere?</p>
+            </div>
+            <div id="amountbox">
+                
+                <div class="leftbox">
+                
+                     
+                    <div class="textamount">
+                        
+                        <p>Amount</p>
+                        <p> $99.9/year</p>
+
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <a href="#">Change</a>
+                </div>
+
+            </div>
+            <button id="pay">Proceed To Payment </button>
+            <div class="canclebox">
+                <a href="#">Cancle Order</a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
